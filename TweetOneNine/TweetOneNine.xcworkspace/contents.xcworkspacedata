@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../OAuthSwift/OAuthSwift.xcodeproj">
+      location = "container:TweetOneNine.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:TweetOneNine.xcodeproj">
+      location = "group:../OAuthSwift/OAuthSwift.xcodeproj">
    </FileRef>
 </Workspace>
