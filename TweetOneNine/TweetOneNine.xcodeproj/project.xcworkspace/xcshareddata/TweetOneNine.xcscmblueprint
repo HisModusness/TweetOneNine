@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F0C5A37F6EFB1E4A4C94E9E236B982DB809CBD56",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F0C5A37F6EFB1E4A4C94E9E236B982DB809CBD56" : 9223372036854775807,
+    "A65BCAA9B7A77500BBF95593800C3F1B9D215F5E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "36C32E56-7C90-4582-968D-6692CC7DBE6B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F0C5A37F6EFB1E4A4C94E9E236B982DB809CBD56" : "TweetOneNine\/",
+    "A65BCAA9B7A77500BBF95593800C3F1B9D215F5E" : "TweetOneNine\/OAuthSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TweetOneNine",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TweetOneNine\/TweetOneNine.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OAuthSwift\/OAuthSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A65BCAA9B7A77500BBF95593800C3F1B9D215F5E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HisModusness\/TweetOneNine.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F0C5A37F6EFB1E4A4C94E9E236B982DB809CBD56"
+    }
+  ]
+}
