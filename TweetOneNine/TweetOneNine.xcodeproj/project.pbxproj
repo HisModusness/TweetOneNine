@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B13E4C01E33C396002BF161 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13E4BF1E33C396002BF161 /* TweetCell.swift */; };
+		7B13E4C81E33C3AC002BF161 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B13E4C71E33C3AC002BF161 /* TweetCell.xib */; };
+		7B13E4CA1E33D46B002BF161 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B761FAB1E2EBC3E00004443 /* OAuthSwift.framework */; };
+		7B13E4CB1E33D46B002BF161 /* OAuthSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B761FAB1E2EBC3E00004443 /* OAuthSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B4FD8A91E2DA7B300FA79F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4FD8A81E2DA7B300FA79F7 /* AppDelegate.swift */; };
 		7B4FD8AB1E2DA7B300FA79F7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4FD8AA1E2DA7B300FA79F7 /* FirstViewController.swift */; };
 		7B4FD8AD1E2DA7B300FA79F7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4FD8AC1E2DA7B300FA79F7 /* SecondViewController.swift */; };
@@ -17,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B13E4CC1E33D46B002BF161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B761FA01E2EBC3E00004443 /* OAuthSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F43502791A6791B200038A29;
+			remoteInfo = OAuthSwift;
+		};
 		7B761FAA1E2EBC3E00004443 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7B761FA01E2EBC3E00004443 /* OAuthSwift.xcodeproj */;
@@ -75,7 +86,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7B13E4CE1E33D46B002BF161 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B13E4CB1E33D46B002BF161 /* OAuthSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7B13E4BF1E33C396002BF161 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		7B13E4C71E33C3AC002BF161 /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
 		7B4FD8A51E2DA7B300FA79F7 /* TweetOneNine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetOneNine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4FD8A81E2DA7B300FA79F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B4FD8AA1E2DA7B300FA79F7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B13E4CA1E33D46B002BF161 /* OAuthSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +155,8 @@
 				7B4FD8B31E2DA7B300FA79F7 /* LaunchScreen.storyboard */,
 				7B4FD8B61E2DA7B300FA79F7 /* Info.plist */,
 				7B4FD8D61E2DB62400FA79F7 /* TwitterConnection.swift */,
+				7B13E4BF1E33C396002BF161 /* TweetCell.swift */,
+				7B13E4C71E33C3AC002BF161 /* TweetCell.xib */,
 			);
 			path = TweetOneNine;
 			sourceTree = "<group>";
@@ -155,11 +185,13 @@
 				7B4FD8A11E2DA7B300FA79F7 /* Sources */,
 				7B4FD8A21E2DA7B300FA79F7 /* Frameworks */,
 				7B4FD8A31E2DA7B300FA79F7 /* Resources */,
+				7B13E4CE1E33D46B002BF161 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				7B761FB91E2EBC4A00004443 /* PBXTargetDependency */,
+				7B13E4CD1E33D46B002BF161 /* PBXTargetDependency */,
 			);
 			name = TweetOneNine;
 			productName = TweetOneNine;
@@ -178,6 +210,7 @@
 				TargetAttributes = {
 					7B4FD8A41E2DA7B300FA79F7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N4EL8E3L8J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -266,6 +299,7 @@
 				7B4FD8B51E2DA7B300FA79F7 /* LaunchScreen.storyboard in Resources */,
 				7B4FD8B21E2DA7B300FA79F7 /* Assets.xcassets in Resources */,
 				7B4FD8B01E2DA7B300FA79F7 /* Main.storyboard in Resources */,
+				7B13E4C81E33C3AC002BF161 /* TweetCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +312,7 @@
 			files = (
 				7B4FD8AD1E2DA7B300FA79F7 /* SecondViewController.swift in Sources */,
 				7B4FD8A91E2DA7B300FA79F7 /* AppDelegate.swift in Sources */,
+				7B13E4C01E33C396002BF161 /* TweetCell.swift in Sources */,
 				7B4FD8D71E2DB62400FA79F7 /* TwitterConnection.swift in Sources */,
 				7B4FD8AB1E2DA7B300FA79F7 /* FirstViewController.swift in Sources */,
 			);
@@ -286,6 +321,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B13E4CD1E33D46B002BF161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			targetProxy = 7B13E4CC1E33D46B002BF161 /* PBXContainerItemProxy */;
+		};
 		7B761FB91E2EBC4A00004443 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OAuthSwift;
@@ -407,7 +447,9 @@
 		7B4FD8BA1E2DA7B300FA79F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N4EL8E3L8J;
 				FRAMEWORK_SEARCH_PATHS = "/Users/liamwestby/Documents/Programming/TweetOneNine/**";
 				INFOPLIST_FILE = TweetOneNine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,7 +462,9 @@
 		7B4FD8BB1E2DA7B300FA79F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N4EL8E3L8J;
 				FRAMEWORK_SEARCH_PATHS = "/Users/liamwestby/Documents/Programming/TweetOneNine/**";
 				INFOPLIST_FILE = TweetOneNine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

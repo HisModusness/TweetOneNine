@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TweetCell" customModule="TweetOneNine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a test of the really long name of this tweet lmao" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-AM-keK">
+                    <rect key="frame" x="16" y="29" width="343" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vr-vd-PtU">
+                    <rect key="frame" x="16" y="8" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7Lj-ys-kdm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Vr-vd-PtU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="5IL-b8-le7"/>
+                <constraint firstAttribute="bottom" secondItem="CN6-AM-keK" secondAttribute="bottom" constant="8" id="A5s-Ca-HXM"/>
+                <constraint firstAttribute="trailing" secondItem="CN6-AM-keK" secondAttribute="trailing" constant="16" id="PVQ-4o-zxS"/>
+                <constraint firstItem="CN6-AM-keK" firstAttribute="top" secondItem="7Vr-vd-PtU" secondAttribute="bottom" id="WkP-an-dI4"/>
+                <constraint firstItem="CN6-AM-keK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="fRT-4A-lbC"/>
+                <constraint firstItem="7Vr-vd-PtU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="uGv-5R-vCj"/>
+                <constraint firstAttribute="trailing" secondItem="7Vr-vd-PtU" secondAttribute="trailing" constant="16" id="uue-fH-HQC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tweetLabel" destination="CN6-AM-keK" id="5Nb-n7-nyK"/>
+                <outlet property="userName" destination="7Vr-vd-PtU" id="Y2b-l9-0I3"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="343.5"/>
+        </view>
+    </objects>
+</document>
